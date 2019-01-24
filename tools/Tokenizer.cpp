@@ -30,4 +30,6 @@ vector<string> Tokenize(const string& str, const string& delimiter) {
 	    start = str.find_first_not_of(delimiter, last);
 	    last = str.find_first_of(delimiter, start);
     }
+
+    return tokenVector;
 }
